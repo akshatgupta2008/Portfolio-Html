@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me - Akshat Gupta</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #4a90e2;
+      color: white;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      font-style: italic;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h2 {
+      color: #4a90e2;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #4a90e2;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 25px;
+    }
+
+    label {
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+      margin-bottom: 15px;
+      transition: border 0.3s ease;
+    }
+
+    input:focus, textarea:focus {
+      border: 1px solid #4a90e2;
+      outline: none;
+    }
+
+    button {
+      padding: 12px;
+      background: #4a90e2;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    button:hover {
+      background: #357ABD;
+      transform: scale(1.05);
+    }
+
+    .contact-info {
+      margin-top: 20px;
+    }
+
+    .contact-info p {
+      margin: 8px 0;
+      font-size: 1.1em;
+    }
+
+    .contact-info a {
+      color: #4a90e2;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .contact-info a:hover {
+      color: #2a5298;
+    }
+
+    hr {
+      border: none;
+      height: 2px;
+      background: #4a90e2;
+      margin: 30px auto;
+      width: 60%;
+    }
+
+    a.return-link {
+      display: inline-block;
+      margin: 20px auto;
+      padding: 12px 25px;
+      background: #ffdd57;
+      color: #1e3c72;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+
+    a.return-link:hover {
+      background: #fff;
+      color: #2a5298;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #eee;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Contact Me</h1>
+    <p>Akshat Gupta</p>
+  </header>
+
+  <section>
+    <h2>Get in Touch</h2>
+    <form action="#" method="post">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <h2>Other Ways to Reach Me</h2>
+      <p>Email: <a href="mailto:aks20051020@gmail.com">aks20051020@gmail.com</a></p>
+      <p>Phone: +91-7895905900</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/akshat-gupta-257064294/" target="_blank">linkedin.com/in/akshat-gupta-257064294</a></p>
+      <p>GitHub: <a href="https://github.com/akshatgupta" target="_blank">github.com/akshatgupta</a></p>
+    </div>
+  </section>
+
+  <hr>
+  <a class="return-link" href="http://127.0.0.1:5500/index.html">⬅ Return</a>
+
+  <footer>
+    <p>&copy; 2026 Akshat Gupta | Let’s connect!</p>
+  </footer>
+</body>
+</html>

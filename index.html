@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Akshat Gupta Portfolio</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      /* Dark background image with overlay */
+      background: url('https://images.unsplash.com/photo-1508780709619-79562169bc64?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      position: relative;
+    }
+
+    /* Overlay for readability */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: -1;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      color: #ffdd57;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    }
+
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+      font-weight: 300;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    hr {
+      border: none;
+      height: 2px;
+      background: #ffdd57;
+      margin: 30px auto;
+      width: 60%;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    h3 {
+      margin: 20px 0 10px;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    a {
+      text-decoration: none;
+      color: #ffdd57;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    a:hover {
+      color: #fff;
+      text-shadow: 0 0 8px #ffdd57;
+    }
+
+    img {
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.9);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.08);
+      box-shadow: 0 12px 25px rgba(255, 221, 87, 0.6);
+    }
+
+    .nav-links {
+      margin-top: 30px;
+    }
+
+    .nav-links a {
+      margin: 0 15px;
+      padding: 12px 25px;
+      background: #ffdd57;
+      color: #1e3c72;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+      transition: all 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      background: #fff;
+      color: #2a5298;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(255, 221, 87, 0.8);
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Akshat Gupta Portfolio</h1>
+  <h2>I'm a Web Developer</h2>
+  <hr />
+
+  <h3><a href="http://127.0.0.1:5500/project1.html">Movie Ranking Project</a></h3>
+  <img src="./images/Screenshot 2026-01-21 214448.png" height="200" alt="movie ranking project preview" />
+
+  <h3><a href="http://127.0.0.1:5500/project2.html">Birthday Invite Project</a></h3>
+  <img src="./images/Screenshot 2026-01-21 214858.png" height="200" alt="birthday invite project preview" />
+
+  <hr />
+
+  <div class="nav-links">
+    <a href="http://127.0.0.1:5500/projectaboutme.html">About Me</a>
+    <a href="http://127.0.0.1:5500/projectcontactme.html">Contact Me</a>
+  </div>
+</body>
+</html>
